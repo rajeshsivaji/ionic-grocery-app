@@ -15,6 +15,7 @@ foods: Food[] = [];
 
   ngOnInit() {
   this.getCategories();
+  this.foods = this.foodService.getFoods();
   }
 
   getCategories(){
