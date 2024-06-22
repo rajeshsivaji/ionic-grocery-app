@@ -1,0 +1,23 @@
+
+
+<ion-content>
+  <!----header-->
+<div class="header">
+  <h1>Menu</h1>
+  <div class="avatar">
+    <ion-img src="https://www.qatarairways.com/etc/designs/qrweb/images/ic_launcher.png"></ion-img>
+  </div>
+</div>
+
+  <!----searchbar-->
+  <app-searchbar></app-searchbar>
+
+  <!----category-->
+  <div class="categories">
+    <app-category-item *ngFor="let item of categories" [item]="item"></app-category-item>
+</div>
+
+<!----products-->
+<h1 class="list-header">Popular</h1>
+<div class="food-list"></div>
+</ion-content>
