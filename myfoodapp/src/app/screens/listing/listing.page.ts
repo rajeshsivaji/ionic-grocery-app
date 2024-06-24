@@ -22,28 +22,29 @@ foods: Food[] = [];
     this.categories = [
       {
         id: 1,
-        label:'All',
-        image: 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg',
-        active:false
+        label: "beef",
+        image: "https://www.themealdb.com/images/category/beef.png",
+        active: false  
       },
       {
         id: 2,
-        label:'Burgers',
-        image: 'https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg',
-        active:false
-      },
+        label: "Chicken",
+        image: "https://www.themealdb.com/images/category/chicken.png",
+        active: false  
+        },
       {
         id: 3,
-        label:'Dishes',
-        image: 'https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg',
-        active:false
-      },
+        label: "Dessert",
+        image: "https://www.themealdb.com/images/category/dessert.png",
+        active: false
+           },
       {
         id: 4,
-        label:'Shushi',
-        image: 'https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg',
-        active:false
-      }
+        label: "Lamb",
+        image: "https://www.themealdb.com/images/category/lamb.png",
+        active: false
+           }
+    
     ];
   }
 
