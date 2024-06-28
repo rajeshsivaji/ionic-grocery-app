@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Category } from 'src/app/models/category.model';
 import { Food } from 'src/app/models/food.modal';
-import { Foodservice } from 'src/app/services/food.service';
+import { FoodService } from 'src/app/services/food.service';
 
 @Component({
   selector: 'app-listing',
@@ -11,7 +12,7 @@ import { Foodservice } from 'src/app/services/food.service';
 export class ListingPage implements OnInit {
 categories: Category[] = [];
 foods: Food[] = [];
-  constructor(private foodService: Foodservice) { }
+  constructor(private foodService: FoodService, private router: Router) { }
 
   ngOnInit() {
   this.getCategories();
@@ -46,6 +47,10 @@ foods: Food[] = [];
            }
     
     ];
+  }
+
+  goToDetailPage(id: number){
+    this.router.navigate(['detail', id])
   }
 
 }

@@ -4,7 +4,7 @@ import { Food } from "../models/food.modal";
 @Injectable({
     providedIn: 'root'
 })
-export class Foodservice{
+export class FoodService{
 
     getFoods(): Food[] {
        return [

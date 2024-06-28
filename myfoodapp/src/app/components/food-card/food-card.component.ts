@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Food } from 'src/app/models/food.modal';
 
 @Component({
@@ -8,5 +8,7 @@ import { Food } from 'src/app/models/food.modal';
 })
 export class FoodCardComponent {
   @Input() item!: Food;
+
+  @Output() clicked = new EventEmitter();
 
 }

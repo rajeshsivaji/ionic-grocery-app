@@ -11,12 +11,9 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+ 
   {
-    path: 'listing',
-    loadChildren: () => import('./screens/listing/listing.module').then( m => m.ListingPageModule)
-  },
-  {
-    path: 'detail',
+    path: 'detail/:id',
     loadChildren: () => import('./screens/detail/detail.module').then( m => m.DetailPageModule)
   },
   {
